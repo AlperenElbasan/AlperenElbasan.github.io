@@ -3,20 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="styleme.css" type="text/css" rel="stylesheet"/>
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-            row-gap: 5px;
-        }
-
-        .avatar {
-            vertical-align: middle;
-            border-radius: 50%;
-        }
-
         table {
             border-collapse: collapse;
         }
@@ -28,9 +16,11 @@
         }
     </style>
 </head>
-<body>
+<body class="row justify-center">
+<div class="box column align-center align-items-center">
     <img src="https://cutt.ly/LjvfUeJ" alt="Photo Removed" class="avatar"/>
-    <h2 style="align-content: center">Alperen Elbasan</h2>
+    <h2>Alperen Elbasan</h2>
+    <a href="aboutme.html" style="margin: 15px; font-size: 1.8rem;">About Me</a>
     <table>
         <tr style="font-weight: bold; background-color: #F2F2F2">
             <td></td>
@@ -106,11 +96,12 @@
             <td></td>
         </tr>
     </table>
-    <hr />
+    <hr/>
     <p style="margin-top: 45px">
         <a href="https://validator.w3.org/check/referer">
-            <img src="html5_validator.png" alt="Validate the Website" />
+            <img src="html5_validator.png" alt="Validate the Website"/>
         </a>
     </p>
+</div>
 </body>
 </html>

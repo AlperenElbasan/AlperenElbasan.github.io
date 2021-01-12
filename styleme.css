@@ -1,0 +1,94 @@
+body {
+    margin: 20px;
+    row-gap: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p:first-letter {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: "Arial";
+}
+
+a {
+    font-family: "Times New Roman";
+}
+
+.avatar {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    padding: 10px 15px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+    align-self: start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.movie-details {
+    margin: 10px;
+    row-gap: 8px;
+}
+.movie-details span:nth-child(odd) {
+    color: orange;
+}
+.movie-details span:nth-child(even) {
+    padding-left: 10px;
+    color: darkgrey;
+}
