@@ -1,0 +1,64 @@
+* {
+    color: #0f7777;
+    font-weight: normal;
+}
+h1 {
+    font-size: 24pt;
+}
+body {
+    background-image: url('journal_images/background.gif');
+}
+section {
+    margin: 10%;
+    border: 10px solid white;
+    background-color: white;
+    overflow: auto;
+}
+header {
+    background-color: #a8f0f0;
+    padding: 2px;
+}
+header * {
+    margin: 0;
+    padding: 0;
+}
+header h2 {
+    font-size: 14pt;
+    font-weight: normal;
+}
+article {
+    border: 4px solid #C2E9E9;
+    border-radius: 15px;
+    background-color: #E8FBFB;
+    padding: 5px;
+    margin-top: 10px;
+    overflow: auto;
+}
+article.dark {
+    border: 4px solid #5d8c8c;
+    border-radius: 15px;
+    background-color: #59d7d7;
+    padding: 5px;
+    margin-top: 10px;
+    overflow: auto;
+}
+h2 span {
+    border-bottom: 2px dashed blue;
+}
+.text-end {
+    text-align: end;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.articles {
+    overflow: auto;
+    padding-left: 10px;
+}
