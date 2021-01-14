@@ -1,0 +1,42 @@
+* {
+    color: #404040;
+}
+
+li, p, a {
+    font-size: 11pt;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #A4A400;
+    background-color: #f0f0f0;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+.list-style-none {
+    padding-left: 0;
+}
+.list-style-none li {
+    list-style-type: none;
+}
+
+.directions-list li span {
+    font-weight: bold;
+}
+
+.comment {
+    margin-left: 25px;
+    background-color: #efef8d;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
