@@ -1,0 +1,106 @@
+body {
+    background-image: url("skeleton_files/background.png");
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: url("skeleton_files/bannerbg.png") repeat-x;
+    text-align: center;
+    height: 50px;
+    margin: 0;
+}
+
+.title {
+    font-size: 24pt;
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
+
+.main-box {
+    position: relative;
+    width: 800px;
+    margin: auto;
+    display: block;
+    overflow: auto;
+    border: 4px solid grey;
+    border-radius: 20px;
+}
+
+.movie-reviews {
+    position: relative;
+    float: left;
+    width: 550px;
+    padding: 0;
+}
+.movie-reviews-header {
+    background: url("skeleton_files/rbg.png") repeat-x;
+    font-size: 48pt;
+    color: red;
+}
+.movie-reviews-details {
+    column-count: 2;
+    column-gap: 2%;
+    padding: 0 2%;
+}
+
+.movie-reviews-details p:nth-child(odd) {
+    font-weight: bold;
+    background-color: #e8dc9b;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 8px;
+}
+.movie-reviews-details p  {
+    overflow: auto;
+}
+.movie-reviews-details p img {
+    float: left;
+    margin-right: 8px;
+    padding-top: 0;
+}
+.movie-reviews-details p:nth-child(even) {
+    margin-bottom: 20px;
+}
+
+.movie-details {
+    float: right;
+    width: min-content;
+    background-color: #A2B964;
+}
+.movie-details dl {
+    font-family: Arial sans-serif;
+    padding-left: 10pt;
+}
+.movie-details dl dt {
+    font-weight: bold;
+    margin-top: 10pt;
+}
+.movie-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.movie-poster {
+    text-align: right;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #A2B964;
+    width: 550px;
+    text-align: center;
+}
+
+.links {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
