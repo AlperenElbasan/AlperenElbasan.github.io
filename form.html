@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" type="text/css"/>
+</head>
+<body>
+<form class="column" method="GET">
+    <label for="fName">First name</label>
+    <input id="fName" type="text">
+    <label for="mName">Middle name (optional)</label>
+    <input id="mName" type="text">
+    <label for="lName">LastName</label>
+    <input id="lName" type="text">
+    <label for="address">Residential address line 1</label>
+    <input id="address" type="text">
+    <div class="row">
+        <div class="column">
+            <label for="city">City</label>
+            <input id="city" name="city" type="text">
+        </div>
+        <div class="column">
+            <label for="state">State</label>
+            <select id="state" name="state">
+                <option>IA</option>
+                <option>NY</option>
+            </select>
+        </div>
+        <div class="column">
+            <label for="zip">Zip Code</label>
+            <input id="zip" name="zip" type="text">
+        </div>
+    </div>
+</form>
+<div class="row">
+    <p>
+        <a href="https://validator.w3.org/check/referer">
+            <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Validate the Website"/>
+        </a>
+    </p>
+    <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Validate the Website"/>
+        </a>
+    </p>
+</div>
+</body>
+</html>
