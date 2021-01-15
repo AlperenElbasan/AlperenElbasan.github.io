@@ -15,23 +15,39 @@
     <input id="lName" type="text">
     <label for="address">Residential address line 1</label>
     <input id="address" type="text">
-    <div class="row">
-        <div class="column">
+    <div style="column-count: 3">
+        <div>
             <label for="city">City</label>
+            <br>
             <input id="city" name="city" type="text">
         </div>
-        <div class="column">
+        <div>
             <label for="state">State</label>
+            <br>
             <select id="state" name="state">
-                <option>IA</option>
+                <option selected>IA</option>
                 <option>NY</option>
             </select>
         </div>
-        <div class="column">
+        <div>
             <label for="zip">Zip Code</label>
+            <br>
             <input id="zip" name="zip" type="text">
         </div>
     </div>
+    <label for="phoneNo">Primary phone number</label>
+    <input id="phoneNo" type="text">
+    <div style="column-count: 2">
+        <input type="checkbox" name="phoneType" id="mobile">
+        <label for="mobile">Mobile phone</label>
+        <input type="checkbox" name="phoneType" id="home">
+        <label for="home">Home phone</label>
+    </div>
+    <label for="email">Email address</label>
+    <input id="email" type="text" name="email">
+    <label for="birthdate">Date of birth</label>
+    <input id="birthdate" type="text" name="birthdate">
+    <input class="submit-button" type="submit">
 </form>
 <div class="row">
     <p>

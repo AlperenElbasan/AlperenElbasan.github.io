@@ -18,4 +18,14 @@ input {
     margin-bottom: 10px;
     height: 25px;
 }
+.submit-button {
+    margin: auto;
+    height: 50px;
+    width: 45%;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20pt;
+    box-shadow: none;
+    border: none;
+}
 
