@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="form.css" type="text/css"/>
 </head>
 <body>
-<form class="column" method="GET">
+<form class="column" >
     <label for="fName">First name</label>
-    <input id="fName" type="text">
+    <input id="fName" type="text" name="fName" required>
     <label for="mName">Middle name (optional)</label>
-    <input id="mName" type="text">
+    <input id="mName" type="text" name="mName">
     <label for="lName">LastName</label>
-    <input id="lName" type="text">
+    <input id="lName" type="text" name="lName" required>
+    <label for="ssn">SSN</label>
+    <input id="ssn" type="text" name="ssn" pattern="^\d{3}-\d{2}-\d{4}$" required>
+    <label for="creditCard">Credit Card No</label>
+    <input id="creditCard" type="text" name="creditCard" pattern="^\d{13,19}$" required>
     <label for="address">Residential address line 1</label>
-    <input id="address" type="text">
+    <input id="address" type="text" required>
     <div style="column-count: 3">
         <div>
             <label for="city">City</label>
@@ -24,7 +28,7 @@
         <div>
             <label for="state">State</label>
             <br>
-            <select id="state" name="state">
+            <select id="state" name="state" class="bla">
                 <option selected>IA</option>
                 <option>NY</option>
             </select>
@@ -32,21 +36,21 @@
         <div>
             <label for="zip">Zip Code</label>
             <br>
-            <input id="zip" name="zip" type="text">
+            <input id="zip" name="zip" type="text" pattern="^\d{5}$" required>
         </div>
     </div>
     <label for="phoneNo">Primary phone number</label>
-    <input id="phoneNo" type="text">
+    <input id="phoneNo" type="text" pattern="^\(?\d{3}\)?\s?\d{3}-\d{4}$" required>
     <div style="column-count: 2">
-        <input type="checkbox" name="phoneType" id="mobile">
+        <input type="checkbox" name="phoneType" id="mobile" required>
         <label for="mobile">Mobile phone</label>
-        <input type="checkbox" name="phoneType" id="home">
+        <input type="checkbox" name="phoneType" id="home" required>
         <label for="home">Home phone</label>
     </div>
-    <label for="email">Email address</label>
-    <input id="email" type="text" name="email">
     <label for="birthdate">Date of birth</label>
-    <input id="birthdate" type="text" name="birthdate">
+    <input id="birthdate" type="text" name="birthdate" pattern="^\d{2}\/\d{2}\/[12][09]\d{2}$" required>
+    <label for="email">Email address</label>
+    <input id="email" type="text" name="email" required>
     <input class="submit-button" type="submit">
 </form>
 <div class="row">
