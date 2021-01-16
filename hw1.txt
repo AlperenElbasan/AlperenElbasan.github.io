@@ -1,0 +1,8 @@
+1. true, false, true, true, false, false, false
+2. "10", -1, 1, 2, 6, "9px", "$45", 2, NaN, Infinity, "  -9   5", -14, 1, NaN, NaN
+6. function truncate(str, len) {
+    return len < str.length ? str.slice(0, len - 1) + "..." : str ;
+}
+7. function checkSpam(str) {
+    return str.toLowerCase().includes('viagra') || str.toLowerCase().includes('xxx');
+}
