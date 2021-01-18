@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    background-color: #CCCCFF;
+}
+h1 {
+    font-size: 32pt;
+}
+textarea {
+    width: 90vw;
+    height: 400px;
+}
+button {
+    margin: 0 3px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.justify-center {
+    justify-content: center;
+}
+.control {
+    border: 2px solid black;
+    min-width: 150px;
+    padding: 5px 15px;
+    margin: 5px 10px;
+}
+.control h4 {
+    width: max-content;
+    margin-top:-15px;
+    margin-left:5px;
+    margin-bottom: 10px;
+    background: #CCCCFF;
+}
+.center-itself {
+    margin: 0 auto;
+}
