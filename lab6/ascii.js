@@ -29,3 +29,7 @@ function switchButtonsDisabled() {
   stopButton.disabled = !stopButton.disabled;
   animationSelector.disabled = !animationSelector.disabled;
 }
+
+function changeSize() {
+  document.getElementById('animation-area').style.fontSize = document.getElementById('size-selector').value;
+}
