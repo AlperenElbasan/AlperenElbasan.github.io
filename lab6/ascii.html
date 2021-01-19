@@ -27,9 +27,9 @@
             <h4>Animation:</h4>
             <label>
                 <select id="animation-selector">
-                    <option selected value="Blank">Blank</option>
+                    <option value="Blank">Blank</option>
                     <option value="Custom">Custom</option>
-                    <option value="Exercise">Exercise</option>
+                    <option selected value="Exercise">Exercise</option>
                     <option value="Juggler">Juggler</option>
                     <option value="Bike">Bike</option>
                     <option value="Dive">Dive</option>
@@ -51,6 +51,10 @@
         </div>
         <div class="control">
             <h4>Speed:</h4>
+            <label>
+                <input id="speed-selector" onchange="changeSpeed()" type="checkbox">
+                Turbo
+            </label>
         </div>
     </div>
 </body>

@@ -1,20 +1,31 @@
 let timerId = null;
+let index = 0;
+let moves = [];
 
 function startAnimation() {
   switchButtonsDisabled();
   const animationSelector = document.getElementById('animation-selector');
   const animation = ANIMATIONS[animationSelector.value];
   document.getElementById('animation-area').value = animation;
-  const moves = animation.split('=====\n');
-  let index = 0;
+  moves = animation.split('=====\n');
+  index = 0;
+  startAnimationInterval();
+}
+
+function startAnimationInterval( ) {
   timerId = setInterval(function () {
     if (index > moves.length - 1)
       index = 0;
     document.getElementById('animation-area').value = moves[index++];
-  }, 250);
+  }, document.getElementById('speed-selector').checked ? 50 : 250);
 }
 
-async  function stopAnimation() {
+function changeSpeed() {
+   clearInterval(timerId);
+   startAnimationInterval();
+}
+
+function stopAnimation() {
   clearInterval(timerId);
   switchButtonsDisabled();
   const animationSelector = document.getElementById('animation-selector');
