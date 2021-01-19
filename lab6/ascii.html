@@ -10,6 +10,9 @@
 <body>
     <h1>CS472: ASCII Animation Viewer</h1>
     <label>
+        <textarea id="timer-id-container" style="display: none"></textarea>
+    </label>
+    <label>
         <textarea id="animation-area" rows="20" cols="80"></textarea>
     </label>
     <div class="row justify-center">
@@ -22,6 +25,16 @@
         </div>
         <div class="control">
             <h4>Animation:</h4>
+            <label>
+                <select id="animation-selector">
+                    <option selected value="Blank">Blank</option>
+                    <option value="Custom">Custom</option>
+                    <option value="Exercise">Exercise</option>
+                    <option value="Juggler">Juggler</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Dive">Dive</option>
+                </select>
+            </label>
         </div>
         <div class="control">
             <h4>Size:</h4>
