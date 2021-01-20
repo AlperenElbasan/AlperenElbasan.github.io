@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decorate My Text</title>
+    <link rel="stylesheet" type="text/css" href="decoratemytext.css"/>
+    <script src="decoratemytext.js"></script>
+</head>
+<body>
+<h1>Text Decorator</h1>
+<div class="box">
+    <div class="box-border">Text</div>
+    <label>
+        <textarea id="textarea" rows="4" cols="30"></textarea>
+    </label>
+</div>
+<div class="box">
+    <div class="box-border">Decoration</div>
+    <button onclick="goBigger()">Bigger Decorations!</button>
+    <br>
+    <label>
+        <input id="bling" type="checkbox" onchange="bling()">
+        Bling
+    </label>
+</div>
+</body>
+</html>

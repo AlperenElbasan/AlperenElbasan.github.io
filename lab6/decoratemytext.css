@@ -1,0 +1,23 @@
+h1 {
+    font-style: italic;
+}
+
+.box {
+    border: 2px solid black;
+    min-width: 150px;
+    padding: 5px 15px;
+    margin: 15px 5px;
+}
+
+.box .box-border:first-child {
+    width: max-content;
+    margin-top: -15px;
+    margin-left: 5px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    background: white;
+}
+
+#textarea {
+    font-size: 12px;
+}
